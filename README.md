@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Brevify – Turn PDFs into powerful, concise summaries using the power of AI!
 
-## Getting Started
+Brevify is built with the latest tech stack: Next.js 15 App Router, Clerk for authentication, React, OpenAI GPT-4, Langchain, ShadCN UI, Tailwind CSS 4, NeonDB, UploadThing, Stripe, TypeScript, and more.
 
-First, run the development server:
+![Project Preview](https://brevify-ai.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Key Technologies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js 15 App Router** – Enables server-side rendering, routing, and API endpoints with Server Components  
+- **React** – Builds interactive and reusable UI components  
+- **Clerk** – Manages secure user authentication (supports Passkeys, GitHub, Google)  
+- **GPT-4** – Delivers smart, emoji-enhanced summaries with deep contextual understanding  
+- **Langchain** – Handles PDF parsing, text extraction, and content chunking  
+- **ShadCN UI** – Provides customizable, accessible React UI elements  
+- **NeonDB (PostgreSQL)** – Stores summaries and user data using a serverless architecture  
+- **UploadThing** – Supports secure file uploads (up to 32MB)  
+- **Stripe** – Manages subscriptions and secure payment flows  
+- **TypeScript** – Adds static typing for robust development  
+- **TailwindCSS 4** – Offers utility-first, responsive styling  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ App Highlights
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Smart, well-structured summaries with key insights  
+- A sleek, progress-tracked summary viewer  
+- Encrypted file processing and secure data flow  
+- API protection with authenticated access  
+- Flexible subscription tiers (Basic & Pro)  
+- Webhooks for real-time Stripe event handling  
+- Personal dashboard for users to manage summaries  
+- Fully responsive design for all screen sizes  
+- On-the-fly updates and real-time revalidation  
+- Ready for production environments  
+- Toast alerts for status updates, errors, and uploads  
+- Speed and performance tuned  
+- SEO-optimized output for shareability  
 
-## Learn More
+## 🛠️ Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+To begin using Brevify locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Fork the repository  
+2. Duplicate the `.env.example` file and rename it to `.env.local`  
+3. Add the required credentials:
+   - OpenAI API Key  
+   - Clerk configuration  
+   - UploadThing setup  
+   - Stripe credentials  
+   - NeonDB database URL  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧩 Cloning & Setup
 
-## Deploy on Vercel
+1. Click "Fork" on the repo to make your own copy  
+2. Clone it to your local machine  
+3. Run `npm install` to get dependencies  
+4. Add environment variables  
+5. Launch with `npm run dev`  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🙏 Credits
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Clerk](https://go.clerk.com/5qQWvFA) – Authentication  
+- [OpenAI](https://openai.com) – GPT-4 Summarization  
+- [Langchain](https://js.langchain.com) – Document processing  
+- [ShadCN UI](https://ui.shadcn.com) – UI Components  
+
+## 📄 License
+
+Licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
