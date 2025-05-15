@@ -37,8 +37,8 @@ export default function UploadForm() {
                 description: err.message,
             })
           },
-          onUploadBegin: ({ file }) => {
-            console.log('upload has begun for', file);
+          onUploadBegin: (data) => {
+            console.log('upload has begun for', data);
           },
         }
       );
@@ -70,8 +70,8 @@ export default function UploadForm() {
             })
 
         
-            const resp = await startUpload([ file ])
-            if(!resp) {
+            const uploadResponse = await startUpload([ file ])
+            if(!uploadResponse) {
                 toast("❌ Something went wrong", {
                     description:  "Please use a different file.",
 
@@ -87,8 +87,13 @@ export default function UploadForm() {
                     </span>
                 ),
             })
+
+            const uploadFileUrl = uploadResponse[0].serverData.fileUrl
             
-            const result = await generatePdfSummary(resp)
+            const result = await generatePdfSummary({
+                fileUrl: uploadFileUrl,
+                fileName: file.name,
+            })
             
             const {data = null, message = null} = result || {}
 
@@ -105,7 +110,7 @@ export default function UploadForm() {
                 if(data.summary) {
                     storeResult = await storePdfSummaryAction({
                         summary: data.summary,
-                        fileUrl: resp[0].url,
+                        fileUrl: uploadFileUrl,
                         title: data.title,
                         fileName: file.name,
                     })
