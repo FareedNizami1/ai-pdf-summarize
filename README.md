@@ -2,7 +2,7 @@
 
 Brevify is built with the latest tech stack: Next.js 15 App Router, Clerk for authentication, React, OpenAI GPT-4, Langchain, ShadCN UI, Tailwind CSS 4, NeonDB, UploadThing, Stripe, TypeScript, and more.
 
-![Project Preview](https://brevify-ai.vercel.app/)
+[Project Preview](https://brevify-ai.vercel.app)
 
 ## 🚀 Key Technologies
 
